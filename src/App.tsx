@@ -47,7 +47,7 @@ function App() {
   const testConnection = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:3000/api/test-connection', {
+      const response = await fetch('http://159.223.155.129:3000/api/test-connection', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(config)
@@ -98,7 +98,7 @@ function App() {
 
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:3000/api/send-emails', {
+      const response = await fetch('http://159.223.155.129:3000/api/send-emails', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
